@@ -1,0 +1,27 @@
+@reference "../index.css";
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-card {
+  opacity: 0; /* Start hidden */
+  animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  /* We use a CSS variable for the delay, passed from React */
+  animation-delay: var(--delay);
+}
+
+.animate-title {
+  animation: fadeInUp 1s ease-out forwards;
+}
