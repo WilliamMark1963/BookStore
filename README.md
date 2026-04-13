@@ -30,12 +30,6 @@ This app allows users to browse books, add a book by filing the form
 
 ---
 
-## 📂 Project Structure
-
-```
-![alt text](image-3.png)
-
----
 
 ## ⚙️ How It Works
 
@@ -92,7 +86,13 @@ npm run dev
 ---
 
 ## 📸 Preview
-![alt text](image-4.png)
+<img width="1872" height="872" alt="image" src="https://github.com/user-attachments/assets/cc6f1656-2ec3-4f71-8487-097357aa9fe9" />
+
+<img width="1915" height="952" alt="image" src="https://github.com/user-attachments/assets/2bea768e-d679-4e88-9047-313f7f62ab3d" />
+
+<img width="1917" height="963" alt="image" src="https://github.com/user-attachments/assets/3fe6b187-68d0-4efd-a942-3aa60ce1749f" />
+
+<img width="1567" height="907" alt="image" src="https://github.com/user-attachments/assets/956235f9-f774-4418-be7b-9713c4dd95e8" />
 
 ---
 
