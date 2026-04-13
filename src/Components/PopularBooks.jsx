@@ -6,9 +6,12 @@ import './PopularBooks.css';
 
 function PopularBooks() {
   const data = useSelector((store) => store.books.items);
+  const PopularBooks = data.filter(item=>item.rating>4.5)
+  console.log(PopularBooks);
+  
 
   return (
-    <div className="py-16 px-4 sm:px-10 bg-gradient-to-b from-blue-900 to-blue-700 min-h-screen">
+    <div className="py-16 px-4 sm:px-10 ">
       
       {/* Title Section */}
       <div className="mb-16 text-center animate-title">
@@ -18,14 +21,8 @@ function PopularBooks() {
         <div className="h-1.5 w-20 bg-amber-400 mx-auto mt-4 rounded-full shadow-lg"></div>
       </div>
 
-      {/* Responsive Grid Container */}
-      {/* grid-cols-1: 1 card per row (Mobile)
-          sm:grid-cols-2: 2 cards per row (Tablet)
-          lg:grid-cols-3: 3 cards per row (Desktop)
-          xl:grid-cols-4: 4 cards per row (Large Screens)
-      */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 gap-x-6 justify-items-center max-w-7xl mx-auto">
-        {data.map((item, index) => (
+        {PopularBooks.map((item, index) => (
           <div 
             key={item.id} 
             className="animate-card w-full flex justify-center" 
@@ -36,6 +33,8 @@ function PopularBooks() {
               author={item.author}
               description={item.description}
               coverImg={item.coverImage}
+              rating = {item.rating}
+              category = {item.category}
             />
           </div>
         ))}
@@ -45,3 +44,11 @@ function PopularBooks() {
 }
 
 export default PopularBooks;
+
+
+      {/* Responsive Grid Container */}
+      {/* grid-cols-1: 1 card per row (Mobile)
+          sm:grid-cols-2: 2 cards per row (Tablet)
+          lg:grid-cols-3: 3 cards per row (Desktop)
+          xl:grid-cols-4: 4 cards per row (Large Screens)
+      */}

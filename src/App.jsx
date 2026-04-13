@@ -5,6 +5,7 @@ import HomePage from './Components/HomePage'
 import { Outlet } from 'react-router-dom'
 import {Provider} from 'react-redux'
 import appStore from './Utilities/appStore'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Provider store={appStore}>
       <Header/>
       <Outlet/>
+      <Footer/>
       </Provider>
 
     </div>

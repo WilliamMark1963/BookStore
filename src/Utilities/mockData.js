@@ -88,5 +88,95 @@ export const mockData=[
     "description": "An astronaut stranded on Mars fights for survival.",
     "rating": 4.7,
     "coverImage": "https://covers.openlibrary.org/b/id/8370221-L.jpg"
+  },
+  {
+    "id": 11,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "category": "Fiction",
+    "description": "A journey of a shepherd discovering his personal legend.",
+    "rating": 3.9,
+    "coverImage": "https://covers.openlibrary.org/b/id/8231996-L.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "category": "Fiction",
+    "description": "A futuristic society driven by technology and control.",
+    "rating": 3.8,
+    "coverImage": "https://covers.openlibrary.org/b/id/8773270-L.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "category": "Non-Fiction",
+    "description": "Strategies for focused success in a distracted world.",
+    "rating": 3.7,
+    "coverImage": "https://covers.openlibrary.org/b/id/8378382-L.jpg"
+  },
+  {
+    "id": 14,
+    "title": "The 4-Hour Workweek",
+    "author": "Timothy Ferriss",
+    "category": "Non-Fiction",
+    "description": "Escape the 9-5 and design your ideal lifestyle.",
+    "rating": 3.6,
+    "coverImage": "https://covers.openlibrary.org/b/id/9259256-L.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Ender's Game",
+    "author": "Orson Scott Card",
+    "category": "Sci-Fi",
+    "description": "A young genius trained to defend Earth from aliens.",
+    "rating": 3.9,
+    "coverImage": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "category": "Sci-Fi",
+    "description": "A hacker uncovers a dangerous virtual virus.",
+    "rating": 3.5,
+    "coverImage": "https://covers.openlibrary.org/b/id/240726-L.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "category": "Non-Fiction",
+    "description": "Principles for achieving financial success.",
+    "rating": 3.8,
+    "coverImage": "https://covers.openlibrary.org/b/id/8235116-L.jpg"
+  },
+  {
+    "id": 18,
+    "title": "The Time Machine",
+    "author": "H.G. Wells",
+    "category": "Sci-Fi",
+    "description": "A scientist travels far into the future of humanity.",
+    "rating": 3.6,
+    "coverImage": "https://covers.openlibrary.org/b/id/7222161-L.jpg"
+  },
+  {
+    "id": 19,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "category": "Fiction",
+    "description": "A teenager's journey through confusion and identity.",
+    "rating": 3.7,
+    "coverImage": "https://covers.openlibrary.org/b/id/8231852-L.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Zero to One",
+    "author": "Peter Thiel",
+    "category": "Non-Fiction",
+    "description": "Insights on startups and innovation.",
+    "rating": 3.9,
+    "coverImage": "https://covers.openlibrary.org/b/id/8232926-L.jpg"
   }
 ]
