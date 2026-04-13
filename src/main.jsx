@@ -7,6 +7,7 @@ import HomePage from "./Components/HomePage.jsx";
 import BookDetail from "./Components/BookDetail.jsx";
 import FindBooks from "./Components/FindBooks.jsx";
 import AddBook from "./Components/AddBook.jsx";
+import NotFound from "./Components/NotFound.jsx";
 
 const appRoute = createBrowserRouter([
   {
@@ -33,6 +34,11 @@ const appRoute = createBrowserRouter([
         }
     ],
   },
+
+  {
+    path: '*',
+    element: <NotFound/>
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
