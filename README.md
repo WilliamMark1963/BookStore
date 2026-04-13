@@ -1,16 +1,114 @@
-# React + Vite
+# 📝 React BookStore App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive  built using **React** and **Tailwind CSS**.
+This app allows users to browse books, add a book by filing the form
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Features
 
-## React Compiler
+* ➕ Add new Book
+* ✔️ Search for a book
+* ✅ Filter by a category
+* 📍Routing by react-router-dom
+*  🏪 Bult-in app store.
+* 🔄 Real-time updates using React state
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Concepts Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React Functional Components
+*  `useNavigation`, `useParameter`, `useLocation` Hooks of   router-react-dom
+* `useDispatch, useSelector` Hooks of react-redux
+* Props & Component Communication
+* Rounting Concept
+* Centralised App Store System
+* Conditional Rendering
+* Array Methods (`map`, `filter`, `find`)
+* Immutability in React
+
+---
+
+## 📂 Project Structure
+
+```
+![alt text](image-3.png)
+
+---
+
+## ⚙️ How It Works
+
+### 1. Adding A Book
+
+* User clicks Add Book button
+* Fills the form and submit it
+* UI redirects to the list of books where user sees his book at the top.
+
+### 2. Browse Book
+
+* Click Explore books or browse
+* User can filter thr books by seleting catrgory
+* User can also search for the book with book title.
+
+
+---
+
+## 🛠️ Installation
+
+1. Clone the repository:
+
+```
+git clone https://github.com/WilliamMark1963/BookStore.git
+```
+
+2. Navigate to project folder:
+
+```
+cd BookStore
+```
+
+3. Install dependencies:
+
+```
+npm install
+```
+
+4. Run the app:
+
+```
+npm run dev
+```
+
+---
+
+## 🎯 Future Improvements
+
+* 🗑️ Delete Book
+*  ✏️ Edit Book
+* ☀️ Light mode
+* 🎨 Animations
+
+---
+
+## 📸 Preview
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repo and improve the project!
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
