@@ -1,17 +1,19 @@
-import {createSlice} from '@reduxjs/toolkit'
-import {mockData} from './mockData'
+import { createSlice } from "@reduxjs/toolkit";
+import { mockData } from "./mockData";
 const booksList = createSlice({
-    name:"books",
-    initialState:{
-        items:[
-        ...mockData
-        ]
+  name: "books",
+  initialState: {
+    items: [...mockData],
+  },
+  reducers: {
+    addBook: (state, action) => {
+      // action.payload will be the book object from our form
+      state.items.unshift({
+        ...action.payload,
+       id: Date.now(), // Simple ID generation
+      });
     },
-    reducers:{
-        addBook: (state, action ) =>{
-            state.items.push(action.payload)
-        }
-    }
-})
+  },
+});
 export const { addBook } = booksList.actions;
 export default booksList.reducer;

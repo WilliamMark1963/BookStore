@@ -5,7 +5,7 @@ function Header() {
   const navigate = useNavigate();
   function createBook(){
 
-    navigate("/")
+    navigate("/addbook")
   }
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -26,7 +26,7 @@ function Header() {
           </ul>
           
           {/* Bigger Action Button */}
-          <button className='bg-blue-600 hover:bg-blue-500 px-6 py-2.5 lg:px-8 lg:py-3 rounded-full text-sm lg:text-base font-bold transition-all shadow-lg hover:shadow-blue-500/20'>
+          <button className='bg-blue-600 hover:bg-blue-500 px-6 py-2.5 lg:px-8 lg:py-3 rounded-full text-sm lg:text-base font-bold transition-all shadow-lg hover:shadow-blue-500/20' onClick = {createBook}>
             Add Book
           </button>
         </div>
