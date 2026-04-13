@@ -18,7 +18,7 @@ const navigate = useNavigate();
           className="object-cover h-full w-full transition-transform duration-500 group-hover:scale-110"
         />
         
-        {/* Floating Rating (Top Right) */}
+        {/* Floating Rating */}
         <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-lg border border-white/20 flex items-center gap-1 shadow-xl z-10">
           <span className="text-amber-400 text-sm">★</span>
           <span className="text-white text-xs font-bold">{rating}</span>
@@ -30,7 +30,7 @@ const navigate = useNavigate();
       {/* Content Section */}
       <div className="flex-1 flex flex-col p-5 text-slate-100">
         
-        {/* Category Tag (Top Left of content) */}
+        {/* Category Tag*/}
         <span className="w-fit px-2 py-0.5 mb-2 text-[10px] uppercase tracking-widest font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30 rounded-md">
           {category}
         </span>

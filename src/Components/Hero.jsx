@@ -13,12 +13,12 @@ function Hero() {
         <div className="blur-layer"></div>
         
         <div className="content">
-            {/* text-4xl for mobile  md:text-6xl for tablets lg:text-8xl for desktops */}
+            
             <h1 className="hero-title animate-fade-up animate-delay-1">
                 Welcome To <span className="text-amber-400">BookStore</span>
             </h1>
             
-            {/* text-lg for mobile, text-2xl for larger screens */}
+    
             <h2 className='hero-subtitle animate-fade-up animate-delay-2'>
                 Where you will extend your boundaries
             </h2>
@@ -34,16 +34,3 @@ function Hero() {
 }
 
 export default Hero
-
-
-
-{/* <div className='header'>
-        {/* The layer that handles the blur/opacity */}
-        // <div className="blur-layer"></div>
-        
-        {/* The actual text content */}
-    //     <div className="content">
-    //         <h1 className="text-5xl font-bold mb-2 animate-fade-up animate-delay-1">Welcome To BookStore</h1>
-    //         <h2 className='text-2xl animate-fade-up animate-delay-2' >Where you will extend youre boundaries</h2>
-    //     </div>
-    // </div> 

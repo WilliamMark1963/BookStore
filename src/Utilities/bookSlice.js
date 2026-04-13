@@ -7,10 +7,10 @@ const booksList = createSlice({
   },
   reducers: {
     addBook: (state, action) => {
-      // action.payload will be the book object from our form
+      // add at front like queue DS and Date as ID for new books
       state.items.unshift({
         ...action.payload,
-       id: Date.now(), // Simple ID generation
+       id: Date.now(), 
       });
     },
   },
