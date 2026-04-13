@@ -92,8 +92,7 @@ npm run dev
 ---
 
 ## 📸 Preview
-src/assets/Screenshot 1.png
-
+![alt text](image-4.png)
 
 ---
 
