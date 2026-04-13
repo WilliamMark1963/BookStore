@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function Header() {
   const navigate = useNavigate();
   function createBook(){
+
     navigate("/")
   }
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ function Header() {
         <div className='hidden md:flex items-center space-x-10 lg:space-x-16'>
           <ul className='flex space-x-8 lg:space-x-12 text-base lg:text-xl font-semibold'>
             <li className='hover:text-blue-400 transition-colors cursor-pointer'><Link to="/">Home</Link></li>
-            <li className='hover:text-blue-400 transition-colors cursor-pointer'><Link to="//books/:category">Browse</Link></li>
+            <li className='hover:text-blue-400 transition-colors cursor-pointer'><Link to="/books/fiction">Browse</Link></li>
             <li className='hover:text-blue-400 transition-colors cursor-pointer'><Link to="/about">About</Link></li>
           </ul>
           
