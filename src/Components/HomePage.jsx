@@ -4,6 +4,7 @@ import BookCard from './BookCard'
 import PopularBooks from './PopularBooks'
 import FictionBooks from './FictionBooks'
 import NonFictionBooks from './NonFictionBooks'
+import BookDetail from './BookDetail'
 
 function HomePage() {
   return (

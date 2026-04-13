@@ -40,6 +40,7 @@ const fictionList = data
                             style={{ "--delay": `${index * 100}ms` }}
                         >
                             <BookCard
+                                bookId ={item.id}
                                 title={item.title}
                                 author={item.author}
                                 description={item.description}

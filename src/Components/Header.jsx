@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 function Header() {
+  const navigate = useNavigate();
+  function createBook(){
+    navigate("/")
+  }
   const [isOpen, setIsOpen] = useState(false);
   return (
 <nav className='sticky top-0 z-50 w-full px-6 py-4 lg:py-6 bg-slate-900/80 backdrop-blur-md border-b border-white/10 text-white'>
@@ -15,13 +20,13 @@ function Header() {
         <div className='hidden md:flex items-center space-x-10 lg:space-x-16'>
           <ul className='flex space-x-8 lg:space-x-12 text-base lg:text-xl font-semibold'>
             <li className='hover:text-blue-400 transition-colors cursor-pointer'><Link to="/">Home</Link></li>
-            <li className='hover:text-blue-400 transition-colors cursor-pointer'><Link to="/browse">Browse</Link></li>
+            <li className='hover:text-blue-400 transition-colors cursor-pointer'><Link to="//books/:category">Browse</Link></li>
             <li className='hover:text-blue-400 transition-colors cursor-pointer'><Link to="/about">About</Link></li>
           </ul>
           
           {/* Bigger Action Button */}
           <button className='bg-blue-600 hover:bg-blue-500 px-6 py-2.5 lg:px-8 lg:py-3 rounded-full text-sm lg:text-base font-bold transition-all shadow-lg hover:shadow-blue-500/20'>
-            Sign In
+            Add Book
           </button>
         </div>
 
@@ -39,7 +44,7 @@ function Header() {
             <li><Link to="/browse" onClick={() => setIsOpen(false)}>Browse</Link></li>
             <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
           </ul>
-          <button className='w-full bg-blue-600 py-3 rounded-xl font-bold'>Sign In</button>
+          <button className='w-full bg-blue-600 py-3 rounded-xl font-bold' onClick={createBook}>Sign In</button>
         </div>
       )}
     </nav>

@@ -29,6 +29,7 @@ function PopularBooks() {
             style={{ "--delay": `${index * 120}ms` }}
           >
             <BookCard
+              bookId ={item.id}
               title={item.title}
               author={item.author}
               description={item.description}

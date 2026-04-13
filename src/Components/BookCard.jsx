@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-function BookCard({ title, author, description, coverImg, rating, category }) {
+function BookCard({  bookId, title, author, description, coverImg, rating, category }) {
+const navigate = useNavigate();
+  function handleClick(){
+    console.log("Navigating...");
+    navigate(`/book/${bookId}`);
+  }
   return (
    <div className="w-full max-w-[320px] h-[440px] rounded-2xl border border-white/10 flex flex-col overflow-hidden shadow-lg bg-slate-900/50 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 group">
       
@@ -40,7 +46,7 @@ function BookCard({ title, author, description, coverImg, rating, category }) {
           "{description}"
         </p>
 
-        <button className="mt-auto py-2.5 px-4 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-xs font-bold transition-all active:scale-95 shadow-lg shadow-blue-900/40">
+        <button className="mt-auto py-2.5 px-4 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-xs font-bold transition-all active:scale-95 shadow-lg shadow-blue-900/40" onClick={handleClick}>
           View Details
         </button>
       </div>
